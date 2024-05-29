@@ -6,4 +6,6 @@
     <string name="enter_password">Password</string>
     <string name="enter_email">Email</string>
     <string name="go">GO</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
 </resources>
