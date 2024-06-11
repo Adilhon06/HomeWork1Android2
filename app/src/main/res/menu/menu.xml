@@ -3,14 +3,17 @@
 
     <item
         android:id="@+id/mainFragment"
-        android:title="Main" />
+        android:icon="@drawable/ic_home"
+        android:title="@string/main" />
 
     <item
         android:id="@+id/secondFragment"
-        android:title="Second" />
+        android:icon="@drawable/ic_second"
+        android:title="@string/second" />
 
     <item
         android:id="@+id/thirdFragment"
-        android:title="Thrid" />
+        android:icon="@drawable/ic_third"
+        android:title="@string/thrid" />
 
 </menu>

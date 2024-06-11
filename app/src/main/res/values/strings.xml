@@ -8,4 +8,7 @@
     <string name="go">GO</string>
     <string name="second_fragment">Second Fragment</string>
     <string name="third_fragment">Third Fragment</string>
+    <string name="main">Main</string>
+    <string name="second">Second</string>
+    <string name="thrid">Thrid</string>
 </resources>
