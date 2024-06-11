@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.adilhon.lesson1andoroid2.data.model.PassData
 import com.adilhon.lesson1andoroid2.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -29,11 +30,16 @@ class MainFragment : Fragment() {
 
     private fun setupListener() {
         binding.btnGo.setOnClickListener {
+            val data = PassData(
+                name = binding.etName.text.toString(),
+                email = binding.etEmail.text.toString(),
+                password = binding.etPassword.text.toString()
+            )
             findNavController().navigate(
                 MainFragmentDirections.actionMainFragmentToSecondFragment(
-                    "Name: ${binding.etName.text}\n" +
-                            "Email: ${binding.etEmail.text}\n" +
-                            "Password ${binding.etPassword.text}"
+                    "Name: ${data.name}\n" +
+                            "Email: ${data.email}\n" +
+                            "Password ${data.password}"
                 )
             )
         }
